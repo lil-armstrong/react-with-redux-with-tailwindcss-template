@@ -1,0 +1,53 @@
+{
+  "short_name": "vic-casino",
+  "manifest_version": 2,
+  "name": "Victor casino",
+  "version": "2.0.0",
+  "lang": "eng",
+  "description": "",
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "webextension@victorcasino.com",
+      "strict_min_version": "68.0"
+    }
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "48": "/icon/48.png",
+      "96": "/icon/96.png"
+    }
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Alt+C",
+        "mac": "MacCtrl+Alt+C"
+      },
+      "description": "Opens victor casino"
+    }
+  },
+  "icons": [
+    {
+      "src": "./icon/48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "./icon/96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#28A6F9",
+  "background_color": "#fff"
+}
